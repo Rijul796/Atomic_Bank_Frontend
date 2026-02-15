@@ -110,7 +110,7 @@ function App() {
     setLoading(true);
     try {
       // ⚠️ UPDATE THIS URL TO YOUR RENDER BACKEND URL ⚠️
-      const API_URL = "https://atomic-bank.onrender.com";
+      const API_URL = "https://atomic-bank-backend.onrender.com";
 
       await axios.post(`${API_URL}/api/banking/deposit`, {
         toAccountId: currentUser?.id,

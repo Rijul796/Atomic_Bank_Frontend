@@ -111,7 +111,6 @@ function App() {
     try {
       // ⚠️ UPDATE THIS URL TO YOUR RENDER BACKEND URL ⚠️
       const API_URL = "https://atomic-bank-backend.onrender.com";
-
       await axios.post(`${API_URL}/api/banking/deposit`, {
         toAccountId: currentUser?.id,
         amount: 500
